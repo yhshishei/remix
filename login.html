@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/web3/1.9.0/web3.min.js"></script>
+    <script src="./login.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" crossorigin="anonymous"></script> -->
+    <!-- <script type="text/javascript" src="login.js" type="moudle"></script> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        .container {
+            height: 100%;
+            background-image: linear-gradient(to right, #999999, #330867);
+        }
+        .login-wrapper {
+            background-color: bisque;
+            width: 358px;
+            height: 588px;
+            border-radius: 15px;
+            padding: 0 50px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .header {
+            font-size: 38px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 200px;
+        }
+        .input-item {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(128,125,125);
+            font-size: 15px;
+            outline: none;
+        }
+        .input-item::placeholder {
+            text-transform: uppercase;
+        }
+        .btn {
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: 40px;
+            background-image: linear-gradient(to right,#a6c1ee, #fbc2eb);
+            color: #fff;
+        }
+        .msg {
+            text-align: center;
+            line-height: 88px;
+        }
+        a {
+            text-decoration-line: none;
+            color: #abc1ee;
+        }
+        .first {
+            display:inline-block;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(128,125,125);
+            font-size: 15px;
+            outline: none;
+            text-decoration: none;
+        }
+        .bu {
+            margin: 10px 50px 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-wrapper">
+            <div class="header">Login</div>
+            <div class="form-wrapper">
+                <input type="text" name="username" placeholder="username" class="input-item" id="username">
+                <input type="password" name="password" placeholder="password" class="input-item" id="password">
+                <button  class="btn" id="bton"  type="button" onclick="jump()">login</button>
+                <ul class="first">
+                    <button class="bu" onclick="tea()">teacher</button>
+                    <button class="bu" onclick="stu()">student</button>
+                </ul> 
+            </div>
+            <div class="msg">
+                Don't have account?
+                <a href="#">Sign up</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        var state=1;
+        var num=0;
+        var username1=document.getElementById("username").value;
+        var password1=document.getElementById("password").value;
+        // window.alert(username1);
+        // console.log(password1);
+        function tea()
+        {num=0;}
+        function stu()
+        {num=1;}
+        function jump()
+        {
+            if(state==1&&num==1)
+                window.location.href="D:/综合课程设计/前端/user.html";
+            else if(state==1&&num==0)
+                window.location.href="D:/综合课程设计/前端/asministor.html";
+            else alert("登录失败！")
+        }
+    </script> -->
+</body>
+</html>
+
+
